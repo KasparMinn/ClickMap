@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Spring Test</title>
+
+    <script type = "text/javascript">
+
+        function findPosition(oElement) {
+
+            posX += oElement.offsetLeft;
+            posY += oElement.offsetTop;
+
+            return [ posX, posY ];
+
+        }
+
+
+        function getCoordinates(e) {
+
+            var nPosX = 0;
+            var nPosY = 0;
+            var imagePos;
+
+            imagePos = findPosition(myImgId);
+
+            mainImage = Findposition
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <script type="text/javascript">
+
+            var myImg = document.getElementById("myImgId");
+            myImg.onmousedown = GetCoordinates;
+
+    </script>
+
+    <h1 th:text="${message}"> Hello! </h1>
+    <img src = "https://i.imgur.com/JQca7kX.jpg" id="mainImage" alt = "Click on the map!">
+    </img>
+
+    <p>X:<span id="x"></span></p>
+    <p>Y:<span id="y"></span></p>
+
+</body>
+</html>
